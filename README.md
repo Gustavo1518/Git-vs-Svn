@@ -173,7 +173,7 @@ Se presenta una comparacion de los principales comando de svn y git si es que te
 
 ``` git commit -m "Mensaje" ```
 
-### Aprende Git
+# Aprende Git
 
 Puedes aprender git basico de manera rapida mediante el siguiente enlace:
 
