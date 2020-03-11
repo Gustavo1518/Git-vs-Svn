@@ -115,15 +115,15 @@ Dirigete a la carpeta creada.
 
 Se presenta una comparacion de los principales comando de svn y git si es que te has decidido cambiar por completo a git
 
-Crear un repositorio.
+**Crear un repositorio.**
 
-**Svn**
+**En Svn**
 
 ``` svnadmin create /ruta/del/repo ```
 
 ``` svn import /ruta/del/repo http://ejemplo.com/svn/trunk -m "Iniciando repositorio" ```
 
-**Git**
+**En Git**
 
 ``` git init ```
 
@@ -131,45 +131,45 @@ Crear un repositorio.
 
 ``` git commit -m "primer compromiso" ```
 
-Clonando un repositorio.
+**Clonando un repositorio.**
 
-**Svn**
+**En Svn**
 
 ``` svn checkout svn+ssh://ejemplo.com/svn/trunk ```
 
-**Git**
+**En Git**
 
 ``` git clone ssh://ejemplo.com/svn/trunk ```
 
-Inspeccionando el historial.
+**Inspeccionando el historial.**
 
-**Svn**
+**En Svn**
 
 ``` svn log | less ```
 
-**Git**
+**En Git**
 
 ``` git log ```
 
-Inspeccionando cambios locales.
+**Inspeccionando cambios locales.**
 
-**Svn**
+**En Svn**
 
 ``` svn status ```
 ```svn diff | less  ```
 
-**Git**
+**En Git**
 
 ``` git status ```
  ``` git diff ```
 
-Commit de cambios locales.
+**Commit de cambios locales.**
 
-**Svn**
+**En Svn**
 
 ``` svn commit -m "Mensaje" ```
 
-**Git**
+**En Git**
 
 ``` git commit -m "Mensaje" ```
 
