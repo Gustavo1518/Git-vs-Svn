@@ -10,9 +10,8 @@
 - [Sistema Centralizado vs Sistema Distribuido](#sistema-centralizado-vs-sistema-distribuido)
 
 - [Diferencias entre Subversion y Git](#diferencias-entre-subversion-y-git)
-
--[Resumen subversion vs Git](#resumen-subversion-vs-git)
--[Migrar de svn a git](#migrar-de-svn-a-git)
+- [Resumen subversion vs Git](#resumen-subversion-vs-git)
+- [Migrar de svn a git](#migrar-de-svn-a-git)
 
 <!-- END doctoc generó TOC por favor mantenga un comentario aquí para permitir la actualización automática -->
 
