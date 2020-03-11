@@ -51,64 +51,65 @@ Si tenemos un sistema de control de código fuente estrictamente centralizado y 
 
 1. Instalamos el paquete.
 
-> sudo apt-get install git-svn
+``` sudo apt-get install git-svn ```
 
 2.  crea una carpera donde quieras obtener el proyecto.
 
-> mkdir Migracion
+``` mkdir Migracion ```
 
 Dirigete a la carpeta creada.
 
-> cd Migracion
+``` cd Migracion ```
 
 3. Inicializamos el repositorio git para svn con el siguiente comando y la url del proyecto svn.
 
-> git svn init http://svn.example.com/myproject --no-metadata
+``` git svn init http://svn.example.com/myproject --no-metadata ```
 
 4. Creamos un archivo que relacione los usuarios de subversion con los de git
 
-> echo "camilo = Camilo Nova <camilo.nova@axiacore.com>" >> users.txt
+``` echo "camilo = Camilo Nova <camilo.nova@axiacore.com>" >> users.txt ```
 
 5. Le indicamos a git donde encontrar la relacion de usuario.
 
-> git config svn.authorsfile users.txt
+``` git config svn.authorsfile users.txt ```
 
 6. Obtenemos todas las revisiones de svn y las interpretamos para git (puede demorar mucho tiempo)
 
-> git svn fetch
+``` git svn fetch ```
 
 7. Subimos un nivel.
-
-> cd ..
+ 
+``` cd .. ```
 
 8. Clonamos el repositorio nuevamente para que sea totalmente git.
 
-> git clone migration myproject
+``` git clone migration myproject ```
 
 9. Entramos al repositorio git
 
-> cd myproject
+``` cd myproject ```
 
 10. Borramos la referencia local del origen del repositorio
 
->git remote rm origin
+``` git remote rm origin ```
 
 11. Agregamos la referencia remota del origen
 
->git remote add origin http://example.com/proyecto.git
+``` git remote add origin http://example.com/proyecto.git ```
 
 12. Enviamos el repositorio al servidor remoto (puede demorar un poco)
 
->git push origin master
+``` git push origin master ```
 
 13. Verificamos que todo haya cargado correctamente
 
->git log
+``` git log ```
 
 14. Borramos la carpeta de la migracion
 
->cd ..
->rm -rf migration
+``` cd .. ```
+
+``` rm -rf migration ```
 
 # Comparacion de comandos
 
@@ -118,46 +119,49 @@ Crear un repositorio.
 
 **Svn**
 
-> svnadmin create /ruta/del/repo
-> svn import /ruta/del/repo http://ejemplo.com/svn/trunk -m "Iniciando repositorio"
+``` svnadmin create /ruta/del/repo ```
+
+``` svn import /ruta/del/repo http://ejemplo.com/svn/trunk -m "Iniciando repositorio" ```
 
 **Git**
 
-> git init
-> git add
-> git commit -m "primer compromiso"
+``` git init ```
+
+``` git add ```
+
+``` git commit -m "primer compromiso" ```
 
 Clonando un repositorio.
 
 **Svn**
 
-> svn checkout svn+ssh://ejemplo.com/svn/trunk
+``` svn checkout svn+ssh://ejemplo.com/svn/trunk ```
 
 **Git**
 
-> git clone ssh://ejemplo.com/svn/trunk
+``` git clone ssh://ejemplo.com/svn/trunk ```
 
 Inspeccionando el historial.
 
 **Svn**
 
-> svn log | less
+``` svn log | less ```
 
 **Git**
 
-> git log
+``` git log ```
 
 Inspeccionando cambios locales.
 
 **Svn**
 
-> svn status
-> svn diff | less
+``` svn status ```
+```svn diff | less  ```
 
 **Git**
 
- > git status
- > git diff
+``` git status ```
+ ``` git diff ```
 
 Commit de cambios locales.
 
