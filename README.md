@@ -12,6 +12,8 @@
 - [Diferencias entre Subversion y Git](#diferencias-entre-subversion-y-git)
 - [Resumen subversion vs Git](#resumen-subversion-vs-git)
 - [Migrar de svn a git](#migrar-de-svn-a-git)
+- [Comparacion de comandos](#comparacion-de-comandos)
+- [Aprende Git](#aprende-git)
 
 <!-- END doctoc generó TOC por favor mantenga un comentario aquí para permitir la actualización automática -->
 
@@ -165,10 +167,10 @@ Commit de cambios locales.
 
 **Git**
 
-> git commit -m "Mensaje"
+>>> git commit -m "Mensaje"
 
 ### Aprende Git
 
 Puedes aprender git basico de manera rapida mediante el siguiente enlace:
 
-https://github.com/Gustavo1518/Aprendiendo_Git
+<https://github.com/Gustavo1518/Aprendiendo_Git>
