@@ -163,11 +163,11 @@ Commit de cambios locales.
 
 **Svn**
 
-> svn commit -m "Mensaje"
+``` svn commit -m "Mensaje" ```
 
 **Git**
 
-	``` git commit -m "Mensaje" ```
+``` git commit -m "Mensaje" ```
 
 ### Aprende Git
 
