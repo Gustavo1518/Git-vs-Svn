@@ -167,7 +167,7 @@ Commit de cambios locales.
 
 **Git**
 
->>> git commit -m "Mensaje"
+	``` git commit -m "Mensaje" ```
 
 ### Aprende Git
 
