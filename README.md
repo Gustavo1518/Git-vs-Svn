@@ -107,3 +107,68 @@ Dirigete a la carpeta creada.
 
 >cd ..
 >rm -rf migration
+
+# Comparacion de comandos
+
+Se presenta una comparacion de los principales comando de svn y git si es que te has decidido cambiar por completo a git
+
+Crear un repositorio.
+
+**Svn**
+
+> svnadmin create /ruta/del/repo
+> svn import /ruta/del/repo http://ejemplo.com/svn/trunk -m "Iniciando repositorio"
+
+**Git**
+
+> git init
+> git add
+> git commit -m "primer compromiso"
+
+Clonando un repositorio.
+
+**Svn**
+
+> svn checkout svn+ssh://ejemplo.com/svn/trunk
+
+**Git**
+
+> git clone ssh://ejemplo.com/svn/trunk
+
+Inspeccionando el historial.
+
+**Svn**
+
+> svn log | less
+
+**Git**
+
+> git log
+
+Inspeccionando cambios locales.
+
+**Svn**
+
+> svn status
+> svn diff | less
+
+**Git**
+
+ > git status
+ > git diff
+
+Commit de cambios locales.
+
+**Svn**
+
+> svn commit -m "Mensaje"
+
+**Git**
+
+> git commit -m "Mensaje"
+
+### Aprende Git
+
+Puedes aprender git basico de manera rapida mediante el siguiente enlace:
+
+https://github.com/Gustavo1518/Aprendiendo_Git
